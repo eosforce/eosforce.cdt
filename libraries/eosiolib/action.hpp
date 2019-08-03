@@ -100,6 +100,16 @@ namespace eosio {
    }
 
    /**
+    *  Verifies that @ref account_name exists in the set of provided auths on a action. Fails if not found.
+    *
+    *  @brief Verify specified account exists in the set of provided auths
+    *  @param account_name - name of the account to be verified
+    */
+   inline void require_auth( account_name n ) {
+      ::require_auth( n );
+   }
+
+   /**
     * Packed representation of a permission level (Authorization)
     *
     * @brief Packed representation of a permission level (Authorization)
