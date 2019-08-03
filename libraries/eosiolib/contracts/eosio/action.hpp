@@ -133,6 +133,17 @@ namespace eosio {
    }
 
    /**
+    *  Verifies that @ref account_name exists in the set of provided auths on a action. Fails if not found.
+    *
+    *  @ingroup action
+    *  @param n - name of the account to be verified
+    */
+   inline void require_auth( account_name n ) {
+      internal_use_do_not_use::require_auth( n );
+   }
+
+
+   /**
    *  Returns the time in microseconds from 1970 of the publication_time
    *
    *  @ingroup action
