@@ -375,7 +375,7 @@ namespace eosio {
          check( end <= buffer + buffer_size, "insufficient space in buffer" ); // should never fail
 
          if( buffer < end )
-            printl( buffer, (end-buffer) );
+            prints_l( buffer, (end-buffer) );
       }
 
       EOSLIB_SERIALIZE( asset, (amount)(symbol) )
